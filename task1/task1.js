@@ -18,9 +18,18 @@
 // sumMin([[11,2],[323,2,55]])   //2 + 2 = 4 
 // sumMin([[13,11,2],[3,23,23,55],[23,55,3,77],[39,7,89,94]])   //2 + 3 + 3 + 7 = 15 
 
+arrin = [[1,2,8,9,55,3],[33,22,8,99,55,3],[16,42,345,79,5,1]];
 
+// Массив выводим в html в таблицу
+var html='<table>';
+for (var i=0;i<arrin.length;i++){
+html+='<tr><td>'+'['+arrin[i]+']'+'</td></tr>';
+}
+html+='</table>';
+ 
+document.getElementById('arrayin').innerHTML=html;
 
-alert(sumMin([[1,2,3],[33,22,55],[16,42,345,79,1]]));
+document.getElementById("summmin").innerHTML=(sumMin(arrin));
 
 
 function sumMin(arr){
